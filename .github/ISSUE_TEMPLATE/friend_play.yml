@@ -1,0 +1,38 @@
+name: Friend Play problem
+description: Report online room, connection, reconnect, sync, draw, resign, or rematch issues
+title: "[Friend Play] "
+labels: []
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Problem area
+      options:
+        - Create room
+        - Join room
+        - Move synchronization
+        - Reconnection
+        - Draw
+        - Resign
+        - Rematch
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+  - type: input
+    id: browser
+    attributes:
+      label: Chrome / OS
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshot or extra details
