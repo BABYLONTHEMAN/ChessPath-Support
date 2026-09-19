@@ -1,0 +1,19 @@
+name: Feature request
+description: Suggest an improvement for ChessPath
+title: "[Feature] "
+labels: []
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like ChessPath to do?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why would this be useful?
+  - type: textarea
+    id: example
+    attributes:
+      label: Example or mockup
