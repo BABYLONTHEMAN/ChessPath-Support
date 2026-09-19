@@ -1,0 +1,39 @@
+name: Opening data correction
+description: Report an incorrect opening name, ECO code, move sequence, variation, or theory branch
+title: "[Opening] "
+labels: []
+body:
+  - type: input
+    id: opening
+    attributes:
+      label: Opening / variation
+      placeholder: "Italian Game: Two Knights Defense"
+    validations:
+      required: true
+  - type: input
+    id: moves
+    attributes:
+      label: Move sequence
+      placeholder: "1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 ..."
+    validations:
+      required: true
+  - type: input
+    id: eco
+    attributes:
+      label: ECO code shown
+      placeholder: "C57"
+  - type: textarea
+    id: problem
+    attributes:
+      label: What looks wrong?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should ChessPath show instead?
+  - type: textarea
+    id: source
+    attributes:
+      label: Reference or screenshot
+      description: Optional source, database reference, or screenshot.
